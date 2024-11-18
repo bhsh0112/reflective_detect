@@ -1,0 +1,12 @@
+train: /home/ricky/sh/yolov5/data/data_vest/dataSet_path/test.txt
+val: /home/ricky/sh/yolov5/data/data_vest/dataSet_path/val.txt
+
+#number of classes
+nc: 2
+
+#class names
+names: ["dressed","undressed"]
+
+img_size:
+  - 1920
+  - 1080

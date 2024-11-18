@@ -1,0 +1,12 @@
+train: /home/ricky/sh/reflective_detect/data/reflect/dataSet_path/train.txt
+val: /home/ricky/sh/reflective_detect/data/reflect/dataSet_path/val.txt
+
+#number of classes
+nc: 3
+
+#class names
+names: ["reflective_clothes","hat","person"]
+
+img_size:
+  - 5712
+  - 4287
