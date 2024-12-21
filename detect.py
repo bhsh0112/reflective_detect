@@ -268,7 +268,7 @@ def run(
 
             # Stream results
             #p判断逻辑  result:0--有人未穿，1--所有人穿，2--无人
-            if hat_num>=person_num and hat_num>=person_num:
+            if hat_num>=person_num and ref_num>=person_num:
                 result_flag=0
             else:
                 result_flag=1

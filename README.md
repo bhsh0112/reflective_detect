@@ -16,27 +16,25 @@
 
 ## 2、环境配置
 
-代码运行所需环境
+本部分的核心内容已内嵌入run.sh这一执行脚本，只需要完成以下两部分内容即可
 
-```
-pip install -r requirement.txt
-```
+### 创建虚拟环境
 
-安装中文字体
+为了避免软件环境的矛盾，需要新建一个虚拟环境并进入
+
+### 安装中文字体
 
 把reflective_detect目录下的“simsun.ttf”和"simsun.ttc"复制到以下路径：`/usr/share/fonts/`
 
 ## 3、代码运行
 
+在任何路径下运行下面的指令即可
+
+```bash
+bash path2reflectibe_ditect/run.sh
 ```
-python path/to/reflective_detect/detect.py --weights path/to/reflective_detect/final.pt --source xxx
-```
 
-注：1、上述`path/to/reflective_detect`指的是文件夹"reflective_detect"的路径
-
-​	2、有关source参数：若以图片或视频作为输入，则直接填写对应文件的路径即可
-
-​					     若以摄像头作为输入，则填写摄像头编号（通常自带摄像头编号为0）
+注：如需更改输入路径：可以为上述命令添加参数，如：`bash run.sh test.jpg`
 
 ## 4、代码修改
 
@@ -45,7 +43,7 @@ python path/to/reflective_detect/detect.py --weights path/to/reflective_detect/f
 ​	修改部分为detect.py的271～274行：
 
 ```python
-if hat_num>=person_num and hat_num>=person_num:
+if hat_num>=person_num and ref_num>=person_num:
   result_flag=0
 else:
   result_flag=1
